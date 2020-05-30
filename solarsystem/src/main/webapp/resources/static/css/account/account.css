@@ -1,0 +1,70 @@
+body{
+	padding: 0px;
+	font-family: Helvetica, Arial, Sans-Serif;
+	font-size: 14px;
+	letter-spacing: 0.1em;
+}
+
+.personal-info{
+	display: grid;	
+   	grid-template-columns: 100px 300px;
+   	grid-gap: 10px;
+   	margin: 10px;
+
+}
+
+
+.personal-info > div{
+	border: 1px solid black;
+}
+
+
+.personal-info div:nth-child(1){
+	grid-column: 1 / -1;
+	align-self: center;
+ 	justify-self: center; 
+ 	border: none;
+
+}
+
+
+.shopping-list{
+	display: grid;
+	grid-template-columns: 1fr;
+	margin-bottom: 70px;
+	border: 1px solid #ccc!important;
+}
+
+.items, .head-items{
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	margin: 10px;
+	grid-gap: 10px;
+
+}
+
+.items, .head-items > div{
+ 	grid-gap: 10px;
+}
+
+.items img{
+ 	height: 150px;
+}
+
+.head-items div:nth-child(1){
+	justify-self: center; 
+	grid-column: 1 / -1;
+}
+
+
+.head-items div:nth-child(1n) {
+  	justify-self: center; 
+  	align-self: center;
+}
+
+
+.items div:nth-child(1n) {
+  justify-self: center;
+  align-self: center;
+
+}

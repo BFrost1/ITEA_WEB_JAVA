@@ -1,0 +1,36 @@
+footer{
+	border-top: 1px solid #FFFFFF;
+}
+.footer-all{
+	display: grid;
+	grid-template-rows: 100px 70px;
+	grid-template-columns: 1fr 1fr 1fr;
+	border-top: 1px solid #000000;
+	margin: 20px 0 0;
+	padding: 10px 0 0;
+
+}
+
+.footer-all div{
+	align-self: center;
+ 	justify-self: center; 
+}
+
+
+
+.footer-all div:nth-child(4){
+	grid-column: 1 / -1;
+	align-self: end;
+ 	justify-self: center; 
+ 	border: none;
+
+}
+
+
+
+
+
+
+
+
+
